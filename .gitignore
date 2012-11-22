@@ -1,0 +1,11 @@
+.eunit
+deps
+priv
+*.o
+*.beam
+*.plt
+ebin
+*.swp
+sys.config
+log
+*.dump
