@@ -1,8 +1,6 @@
 
 .PHONY: all app clean deps
 
-export APP_VERSION = $(shell cat src/mira_cep_sub.app.src | grep vsn | grep -Eo '["].+["]' | sed 's|"||g')
-
 ./ebin/erlkafka_app.app: src/*.erl include/*.hrl
 	./rebar compile
 
